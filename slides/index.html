@@ -1,14 +1,14 @@
 <!doctype html>
 <html>
 	<head>
-		<meta charset="utf-8">
+		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
 		<title>reveal.js</title>
 
 		<link rel="stylesheet" href="dist/reset.css">
 		<link rel="stylesheet" href="dist/reveal.css">
-		<link rel="stylesheet" href="dist/theme/black.css" id="theme">
+		<link rel="stylesheet" href="dist/theme/white.css" id="theme">
 
 		<!-- Theme used for syntax highlighted code -->
 		<link rel="stylesheet" href="plugin/highlight/monokai.css" id="highlight-theme">
@@ -51,13 +51,13 @@ vakjes:&nbsp;<span style="font-size: 1rem;"><img src="/wortel_emoji.png" alt="" 
 
 <h2>Opdracht: zoek een volgorde van vakjes.</h2>
 
-<iframe src="https://pohl.experiments.cs.kuleuven.be/co-de/resources/knights_tour/assignment1/nl/" height="580" width="970" style="max-width:100%;max-height:100%;"></iframe>
+<iframe data-preload data-src="https://pohl.experiments.cs.kuleuven.be/co-de/resources/knights_tour/assignment1/nl/" height="580" width="970" style="max-width:100%;max-height:100%;"></iframe>
 
 </section><section>
 
 <h3>Bespreking, heb je een oplossing gevonden?</h3>
 
-<iframe src="https://pohl.experiments.cs.kuleuven.be/co-de/resources/knights_tour/assignment1_support/nl/ " height="580" width="970" style="max-width:100%;max-height:100%;"></iframe>
+<iframe data-preload data-src="https://pohl.experiments.cs.kuleuven.be/co-de/resources/knights_tour/assignment1_support/nl/ " height="580" width="970" style="max-width:100%;max-height:100%;"></iframe>
 </section><section>
 
 <h2>Stadsgids</h2>
@@ -71,13 +71,13 @@ gekocht voor de metro voor de toeristen.</b></p>
 </section><section>
 <p><span>Welke volgorde van bezienswaardigheden zou jij volgen?<br>Test hieronder of je volgorde klopt.</span></p>
 
-<iframe src="https://pohl.experiments.cs.kuleuven.be/co-de/resources/knights_tour/assignment2/nl/"  height="580" width="970" style="max-width:100%;max-height:100%;"></iframe>
+<iframe data-preload data-src="https://pohl.experiments.cs.kuleuven.be/co-de/resources/knights_tour/assignment2/nl/"  height="580" width="970" style="max-width:100%;max-height:100%;"></iframe>
 </section><section>
 
 <p>Welke opdracht vond je het moeilijkste?</p>
 <p>Beschrijf de verschillen tussen beide opgaves.</p>
 
-<iframe src="https://pohl.experiments.cs.kuleuven.be/co-de/resources/knights_tour/transformation/nl/" height="580" width="970" style="max-width:100%;max-height:100%;" ></iframe>
+<iframe data-preload data-src="https://pohl.experiments.cs.kuleuven.be/co-de/resources/knights_tour/transformation/nl/" height="580" width="970" style="max-width:100%;max-height:100%;" ></iframe>
 
 </section>
 <!--
@@ -102,7 +102,8 @@ gekocht voor de metro voor de toeristen.</b></p>
 				hash: true,
 				width: 1400,
 				height: 900,
-
+				//disableLayout: true,
+				//center: true,
 				// Learn about plugins: https://revealjs.com/plugins/
 				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
 			});
