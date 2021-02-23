@@ -1,0 +1,111 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/black.css" id="theme">
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css" id="highlight-theme">
+		<style>
+			p {
+				font-size: 30px;��,��,
+			}
+			img.img-responsive {
+				margin: 0;
+			}
+			.slides h2 {
+				font-size: 1.2em;
+			}
+			.slides h2 {
+				font-size: 1.1em;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+<p>Gebaseerd op de Knight's Tour & Tour Guide les van <a target="_blank" href="https://computationeeldenken.org/">het Co-De platform</a>.</p>
+</section>
+<section>
+<h2>Paardenronde</h2>
+
+<p>Stel je bent een paard uit het schaakspel en je staat in de stal (<img src="/paard_emoji.png" alt="" role="presentation" class="img-responsive atto_image_button_text-bottom" width="20" height="20">).<br>Je wilt nu graag in elk vakje exact één keer komen om er het eten op te eten.<br>Daarna
+wil je terug naar de stal (<img src="/paard_emoji.png" alt="" role="presentation" class="img-responsive atto_image_button_text-bottom" width="20" height="20">).</b></p>
+<p><b>Welke volgorde van vakjes kan je volgen?<br>Test hieronder of jouw volgorde klopt.</b></p>
+
+<p>Het paard in een schaakspel beweegt steeds 1 vakje in één richting en 2 in een andere richting.</p>
+
+<img src="/knights%20tour%20stappen%20paard.png" alt="" role="presentation" class="img-responsive atto_image_button_text-bottom" id="yui_3_17_2_1_1613477057404_28" width="325" height="50">
+
+<p>Vanuit de stal (<img src="/paard_emoji.png" alt="" role="presentation" class="img-responsive atto_image_button_text-bottom" width="20" height="20">) kan je dus naar de volgende
+vakjes:&nbsp;<span style="font-size: 1rem;"><img src="/wortel_emoji.png" alt="" role="presentation" class="img-responsive atto_image_button_text-bottom" width="20" height="20">&nbsp;,&nbsp;<img src="/appel_emoji.png" alt="" role="presentation" class="img-responsive atto_image_button_text-bottom" width="20" height="20"> &amp;&nbsp;<img src="/tomaat_emoji.png" alt="" role="presentation" class="img-responsive atto_image_button_text-bottom" width="20" height="20"></span></p>
+
+</section><section>
+
+<h2>Opdracht: zoek een volgorde van vakjes.</h2>
+
+<iframe src="https://pohl.experiments.cs.kuleuven.be/co-de/resources/knights_tour/assignment1/nl/" height="580" width="970" style="max-width:100%;max-height:100%;"></iframe>
+
+</section><section>
+
+<h3>Bespreking, heb je een oplossing gevonden?</h3>
+
+<iframe src="https://pohl.experiments.cs.kuleuven.be/co-de/resources/knights_tour/assignment1_support/nl/ " height="580" width="970" style="max-width:100%;max-height:100%;"></iframe>
+</section><section>
+
+<h2>Stadsgids</h2>
+
+<p><b>Stel je bent een stadsgids en je wilt op één dag tijd een groep toeristen zoveel
+mogelijk van de stad laten zien. Je staat aan het hotel (<img src="/hotel_emoji.png" alt="" role="presentation" class="img-responsive atto_image_button_text-bottom" width="20" height="20"></b><b style="font-size: 1rem;">) en hebt een dagticket
+gekocht voor de metro voor de toeristen.</b></p>
+
+<p><span>Je wilt één keer bij elke bezienswaardigheid passeren, stapt steeds af na één halte en wilt 's avonds terug eindigen aan het hotel.</span></p>
+
+</section><section>
+<p><span>Welke volgorde van bezienswaardigheden zou jij volgen?<br>Test hieronder of je volgorde klopt.</span></p>
+
+<iframe src="https://pohl.experiments.cs.kuleuven.be/co-de/resources/knights_tour/assignment2/nl/"  height="580" width="970" style="max-width:100%;max-height:100%;"></iframe>
+</section><section>
+
+<p>Welke opdracht vond je het moeilijkste?</p>
+<p>Beschrijf de verschillen tussen beide opgaves.</p>
+
+<iframe src="https://pohl.experiments.cs.kuleuven.be/co-de/resources/knights_tour/transformation/nl/" height="580" width="970" style="max-width:100%;max-height:100%;" ></iframe>
+
+</section>
+<!--
+<section>
+
+<img src="https://pohl.experiments.cs.kuleuven.be/co-de/pluginfile.php/75/mod_assign/intro/Opgave1_twee_extra.png" ></img>
+
+-->
+				</section>
+			</div>
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+				width: 1400,
+				height: 900,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+			});
+		</script>
+	</body>
+</html>
