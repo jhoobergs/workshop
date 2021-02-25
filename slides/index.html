@@ -53,16 +53,39 @@ vakjes:&nbsp;<span style="font-size: 1rem;"><img src="../wortel_emoji.png" alt="
 
 <h2>Opdracht: zoek een volgorde van vakjes.</h2>
 
-<p><b>Welke volgorde van vakjes kan je volgen?<br>Test hieronder of jouw volgorde klopt.</b></p>
+<p><b>Welke volgorde van vakjes kan je volgen?</b></p>
 
 <iframe data-preload data-src="https://pohl.experiments.cs.kuleuven.be/co-de/resources/knights_tour/assignment1/nl/" height="580" width="970" style="max-width:100%;max-height:100%;"></iframe>
 
 </section><section>
 
-<h3>Bespreking, heb je een oplossing gevonden?</h3>
+	<h3>Bespreking</h3>
+	<p>Heb je een oplossing gevonden?</p>
+	<p class="fragment">Denk je dat jouw oplossing de enige bestaande oplossing is?</p>
+	<!--
+		Nee: bv omgekeerde
+	-->
+	<p class="fragment">Hoe heb je de oplossing gevonden?</p>
+	<!---
+		Hoe koos je de volgende zet?
+	-->
+
+<!---
+Numbered the squares
+Used different colors
+Ordered the squares differently
+Used the "check" button a lot
+Other methods
+Didn't use any specific methods
+-->
 
 <iframe data-preload data-src="https://pohl.experiments.cs.kuleuven.be/co-de/resources/knights_tour/assignment1_support/nl/ " height="580" width="970" style="max-width:100%;max-height:100%;"></iframe>
-</section><section>
+				</section>
+				<section>
+<h3>Hoe moeilijk vond je deze opgave?</h3>
+<p>Op een schaal van 0 tot en met 10.</p>
+				</section>
+				<section>
 
 <h2>Stadsgids</h2>
 
@@ -79,13 +102,41 @@ vakjes:&nbsp;<span style="font-size: 1rem;"><img src="../wortel_emoji.png" alt="
 </span></p>
 
 </section><section>
-<p><span>Welke volgorde van bezienswaardigheden zou jij volgen?<br>Test hieronder of je volgorde klopt.</span></p>
-
+<p><span>Welke volgorde van bezienswaardigheden zou jij volgen?</span></p>
 <iframe data-preload data-src="https://pohl.experiments.cs.kuleuven.be/co-de/resources/knights_tour/assignment2/nl/"  height="580" width="970" style="max-width:100%;max-height:100%;"></iframe>
 </section><section>
 
+	<h3>Bespreking</h3>
+	<p>Heb je een oplossing gevonden?</p>
+	<p class="fragment">Denk je dat jouw oplossing de enige bestaande oplossing is?</p>
+	<!--
+		Nee: bv omgekeerde
+	-->
+	<p class="fragment">Hoe heb je de oplossing gevonden?</p>
+	<!---
+		Hoe koos je de volgende zet?
+		Voer de antwoorden uit
+	-->
+
+<!---
+Numbered the squares
+Used different colors
+Ordered the squares differently
+Used the "check" button a lot
+Other methods
+Didn't use any specific methods
+-->
+
+<iframe data-preload data-src="https://pohl.experiments.cs.kuleuven.be/co-de/resources/knights_tour/assignment2/nl/"  height="580" width="970" style="max-width:100%;max-height:100%;"></iframe>
+</section>				<section>
+<h3>Hoe moeilijk vond je deze opgave?</h3>
+<p>Op een schaal van 0 tot en met 10.</p>
+				</section>
+<section>
+
 <p>Welke opdracht vond je het moeilijkste?</p>
 <p class="fragment">Beschrijf de verschillen tussen beide opgaves.</p>
+<p class="fragment">Beschrijf de gelijkenissen tussen beide opgaves.</p>
 
 <span class="fragment">
 	<p>Zijn beide opgaves wel zo verschillend?</p>
@@ -94,23 +145,93 @@ vakjes:&nbsp;<span style="font-size: 1rem;"><img src="../wortel_emoji.png" alt="
 </section>
 
 <section>
+<h2>Twee voorstellingen</h2>
+<p class="fragment">Hoe vormen we het ene probleem om naar het andere?</p>
+<!--
+1. Replace all symbols by letters 
+2. Hide the borders 
+3. Draw a line from each letter to every letter the chess knight is allowed to move to
+4. Reorder the letters to avoid intersections as much as possible
+5. (Replace the letters back by monuments)
+-->
+<p class="fragment">Hoe kan een oplossing voor het ene probleem geïnterpreteerd worden als een oplossing voor het andere probleem?</p>
+<!---
+Each line between two monuments from the Tour Guide is a possible move between two squares of the Knight's Tour board. A tour passing all monuments corresponds to a tour of the chess knight on the board (and the other way around). The only aspect that is still missing, is how to derive which monument corresponds to which square on the chess board. This will be addressed in the next question
+-->
+<p class="fragment">Welke vierkanten komen overeen met welke monumenten?</p>
+<!--
+De corresponding squares of the Knight's Tour and the monuments of the Tour Guide puzzle have been given the same letter.  When we've drawn the lines between the letters, we reorder the letters and lines to avoid intersections. This is not always possible and it is definitely not easy to spot how to begin! You can try it yourself, starting with one letter (for instance 'A') and putting the letters that have a direct line to letter 'A' around it. Afterwards you try the same procedure with a neighboring letter of 'A' (for instance with 'I'). You can repeat these steps until you've covered all letters and lines.
+-->
+<!--
+Meerdere oplossingen, bv
+Paard: Maskers
+Bessen: Trein
+Kersen: Museum
+Meloen: gebouw (links van paaseiland)
+Banaan: Kerk
+Tomaat: kabelbaan
+Wortel: piramides (lniks van masker)
+Ananas: Strand
+Appel: Vrijheidsbeeld
+Maïs: fontein
+Aardbei: Stadion
+Druppel: Paaseiland
+-->
+<img src="../Opgave1.png" alt="" role="presentation" class="img-responsive atto_image_button_text-bottom">
+<img src="../Opgave2.png" alt="" role="presentation" class="img-responsive atto_image_button_text-bottom">
+
+</section>
+
+<section>
 	<h2>Link met basiscompententies van CD</h2>
 	<p>Welke basiscompetenties komen aan bod bij deze les?</p>
 
 	</section>
-
+<section>
+	<h2>Abstractie</h2>
+	<p>Analyseren van welke deel van de voorgestelde informatie van belang was.</p>
+	<p>Welke gegevens waren van belang?</p>
+<!--
+Welke plaatsen er zijn & welke verbonden zijn
+Plaatsnamen etc zijn niet van belang -> letters
+-->
+</section>
+<section>
+<h2>Veralgemening</h2>
+<h3>Veralgemening van het probleem</h3>
+<p>Andere bordlayout</p>
+<p>Andere sprongen</p>
+<h3>Veralgemening van de oplossingsmethode</h3>
+<p>Het gebruik van grafen is een algemene methode</p>
+<p>Waarvoor zou je dit nog kunnen gebruiken?</p>
+</section>
+<section>
+<h2>Decompositie in subproblemen</h2>
+<p>Een grafe opstellen.</p>
+<p>Een (hamiltoniaans) pad zoeken in de grafe</p>
+<p>Het pad omvormen naar een reeks sprongen op het bord</p>
+<p>Elk subprobleem kan onafhankelijk worden opgelost.</p>
+<!-- algoritme voor ham pad kan worden hergebruikt --->
+</section>
+<section>
+<h2>Algoritmisch denken</h2>
+<p>Niet echt veel gebruikt</p>
+</section>
+<section>
+<h2>Evaluatie</h2>
+<p>Geen focus hierop</p>
+</section>
 
 <section>
 	<h2>Extra opdrachten</h2>
 	<p>Hoe verandert de oplossingsmethode als we 2 vakjes toevoegen aan het veld?</p>
+<img src="../Opgave1.png" alt="" role="presentation" class="img-responsive atto_image_button_text-bottom">
 	<p class="fragment">Hoe verandert de oplossingsmethode als het paard andere sprongen maakt?</p>
 	<p class="fragment">Hoe verandert de oplossingsmethode als het paard verschillende soorten sprong kan maken?</p>
 	<p class="fragment">Kan een paard alle vakjes van een schaakbord bereiken?</p>
 	<p class="fragment">Kunnen jullie nog variaties bedenken?</p>
-<!---
-<img src="https://pohl.experiments.cs.kuleuven.be/co-de/pluginfile.php/75/mod_assign/intro/Opgave1_twee_extra.png" ></img>
--->
-				</section>
+	<!-- vb: paard allergisch voor appelen en ananassen en moet die vakken ontwijken -> geen edges --->
+</section>
 <section>
 	<h2>Einde van de workshop</h2>
 	<p style="margin-top:30px">Bedankt voor het luisteren</p>
