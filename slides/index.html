@@ -22,7 +22,7 @@
 			.slides h2 {
 				font-size: 1.2em;
 			}
-			.slides h2 {
+			.slides h3 {
 				font-size: 1.1em;
 			}
 		</style>
@@ -38,15 +38,16 @@
 
 <p>Stel je bent een paard uit het schaakspel en je staat in de stal (<img src="../paard_emoji.png" alt="" role="presentation" class="img-responsive atto_image_button_text-bottom" width="20" height="20">).</p>
 <img src="../Opgave1.png" alt="" role="presentation" class="img-responsive atto_image_button_text-bottom">
-<p>Je wilt nu graag in elk vakje exact één keer komen om er het eten op te eten.</p>
-<p>Daarna
+<p class="fragment">Je wilt nu graag in elk vakje exact één keer komen om er het eten op te eten.</p>
+<p class="fragment">Daarna
 wil je terug naar de stal (<img src="../paard_emoji.png" alt="" role="presentation" class="img-responsive atto_image_button_text-bottom" width="20" height="20">).</b></p>
 
+<span class="fragment">
 <p>Het paard in een schaakspel beweegt steeds 1 vakje in één richting en 2 in een andere richting.</p>
 
 <img src="../knights%20tour%20stappen%20paard.png" alt="" role="presentation" class="img-responsive atto_image_button_text-bottom" id="yui_3_17_2_1_1613477057404_28" width="325" height="50">
-
-<p>Vanuit de stal (<img src="../paard_emoji.png" alt="" role="presentation" class="img-responsive atto_image_button_text-bottom" width="20" height="20">) kan je dus naar de volgende
+					</span>
+<p class="fragment">Vanuit de stal (<img src="../paard_emoji.png" alt="" role="presentation" class="img-responsive atto_image_button_text-bottom" width="20" height="20">) kan je dus naar de volgende
 vakjes:&nbsp;<span style="font-size: 1rem;"><img src="../wortel_emoji.png" alt="" role="presentation" class="img-responsive atto_image_button_text-bottom" width="20" height="20">&nbsp;,&nbsp;<img src="../appel_emoji.png" alt="" role="presentation" class="img-responsive atto_image_button_text-bottom" width="20" height="20"> &amp;&nbsp;<img src="../tomaat_emoji.png" alt="" role="presentation" class="img-responsive atto_image_button_text-bottom" width="20" height="20"></span></p>
 
 </section><section>
@@ -102,6 +103,7 @@ Didn't use any specific methods
 </span></p>
 
 </section><section>
+<h2>Opdracht: zoek een volgorde van bezienswaardigheden.</h2>
 <p><span>Welke volgorde van bezienswaardigheden zou jij volgen?</span></p>
 <iframe data-preload data-src="https://pohl.experiments.cs.kuleuven.be/co-de/resources/knights_tour/assignment2/nl/"  height="580" width="970" style="max-width:100%;max-height:100%;"></iframe>
 </section><section>
@@ -138,10 +140,8 @@ Didn't use any specific methods
 <p class="fragment">Beschrijf de verschillen tussen beide opgaves.</p>
 <p class="fragment">Beschrijf de gelijkenissen tussen beide opgaves.</p>
 
-<span class="fragment">
-	<p>Zijn beide opgaves wel zo verschillend?</p>
-<iframe data-preload data-src="https://pohl.experiments.cs.kuleuven.be/co-de/resources/knights_tour/transformation/nl/" height="580" width="970" style="max-width:100%;max-height:100%;" ></iframe>
-</span>
+	<p class="fragment">Zijn beide opgaves wel zo verschillend?</p>
+<iframe class="fragment" data-preload data-src="https://pohl.experiments.cs.kuleuven.be/co-de/resources/knights_tour/transformation/nl/" height="580" width="970" style="max-width:100%;max-height:100%;" ></iframe>
 </section>
 
 <section>
@@ -189,8 +189,8 @@ Druppel: Paaseiland
 	</section>
 <section>
 	<h2>Abstractie</h2>
-	<p>Analyseren van welke deel van de voorgestelde informatie van belang was.</p>
-	<p>Welke gegevens waren van belang?</p>
+	<p class="fragment">Analyseren van welke deel van de voorgestelde informatie van belang was.</p>
+	<p class="fragment">Welke gegevens waren van belang?</p>
 <!--
 Welke plaatsen er zijn & welke verbonden zijn
 Plaatsnamen etc zijn niet van belang -> letters
@@ -198,19 +198,19 @@ Plaatsnamen etc zijn niet van belang -> letters
 </section>
 <section>
 <h2>Veralgemening</h2>
-<h3>Veralgemening van het probleem</h3>
-<p>Andere bordlayout</p>
-<p>Andere sprongen</p>
-<h3>Veralgemening van de oplossingsmethode</h3>
-<p>Het gebruik van grafen is een algemene methode</p>
-<p>Waarvoor zou je dit nog kunnen gebruiken?</p>
+<h3 class="fragment">Veralgemening van het probleem</h3>
+<p class="fragment">Andere bordlayout</p>
+<p class="fragment">Andere sprongen</p>
+<h3 class="fragment">Veralgemening van de oplossingsmethode</h3>
+<p class="fragment">Het gebruik van grafen is een algemene methode</p>
+<p class="fragment">Waarvoor zou je dit nog kunnen gebruiken?</p>
 </section>
 <section>
 <h2>Decompositie in subproblemen</h2>
-<p>Een grafe opstellen.</p>
-<p>Een (hamiltoniaans) pad zoeken in de grafe</p>
-<p>Het pad omvormen naar een reeks sprongen op het bord</p>
-<p>Elk subprobleem kan onafhankelijk worden opgelost.</p>
+<p class="fragment">Een grafe opstellen.</p>
+<p class="fragment">Een (hamiltoniaans) pad zoeken in de grafe</p>
+<p class="fragment">Het pad omvormen naar een reeks sprongen op het bord</p>
+<p class="fragment">Elk subprobleem kan onafhankelijk worden opgelost.</p>
 <!-- algoritme voor ham pad kan worden hergebruikt --->
 </section>
 <section>
@@ -224,8 +224,11 @@ Plaatsnamen etc zijn niet van belang -> letters
 
 <section>
 	<h2>Extra opdrachten</h2>
+	<span class="fragment">
 	<p>Hoe verandert de oplossingsmethode als we 2 vakjes toevoegen aan het veld?</p>
-<img src="../Opgave1.png" alt="" role="presentation" class="img-responsive atto_image_button_text-bottom">
+<img src="../Opgave1_twee_extra.png" alt="" role="presentation" class="img-responsive atto_image_button_text-bottom">
+<img class="fragment" src="../Opgave1_twee_extra_juist.png" alt="" role="presentation" class="img-responsive atto_image_button_text-bottom">
+	</span>
 	<p class="fragment">Hoe verandert de oplossingsmethode als het paard andere sprongen maakt?</p>
 	<p class="fragment">Hoe verandert de oplossingsmethode als het paard verschillende soorten sprong kan maken?</p>
 	<p class="fragment">Kan een paard alle vakjes van een schaakbord bereiken?</p>
