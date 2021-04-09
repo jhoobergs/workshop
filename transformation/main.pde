@@ -1,6 +1,6 @@
 color grey = color(75,75,75);
 color red = #1982c4;
-String root = "/emoji/";
+String root = "../emoji/";
 
 ArrayList<Node> nodes = new ArrayList<Node>();
 ArrayList<Edge> edges = new ArrayList<Edge>();

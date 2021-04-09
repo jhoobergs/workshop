@@ -7,7 +7,7 @@ color blue = #1982c4;
 color col; //Colors green/red when a solution is checked
 PFont f;
 String message1; String message2;
-String root = "/emoji/";
+String root = "../emoji/";
 PImage im1; PImage im2; PImage im3; PImage im4; PImage im5; PImage im6; PImage im7; PImage im8; PImage im9; PImage im10; PImage im11; PImage im12;
 
 Stadsgids gids; 
